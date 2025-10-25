@@ -1,5 +1,5 @@
 import { Hono } from "hono";
-import { upgradeWebSocket } from "hono/cloudflare-workers";
+import { upgradeWebSocket } from "hono/bun";
 import { IncomingData } from "./types/Incoming";
 import { handleAcceptNode, handleRemove } from "./state";
 
