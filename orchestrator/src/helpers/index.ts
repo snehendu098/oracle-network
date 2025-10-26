@@ -1,7 +1,11 @@
-import { OracleRequestData, OutgoingMessage } from "../types/Outgoing";
+import { OutgoingMessage } from "../types/Outgoing";
 import { getWsClients } from "../state";
 
-export const handleConnection = async (requestId: string, agentId: string, prompt: string) => {
+export const handleConnection = async (
+  requestId: string,
+  agentId: string,
+  prompt: string,
+) => {
   const clients = getWsClients();
 
   const message: OutgoingMessage = {
